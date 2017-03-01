@@ -1,0 +1,243 @@
+/*========QUICK WORKAROUND FOR SCROLL JITTER ADDRESS BAR HIDE MOBILE DEVICE*/
+/*
+@media only screen and (max-width:768px){
+html, body {
+  height: 100%;
+}
+
+#scrollable-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+}
+@media only screen and (max-width:450px){
+.navbar{width: 98%}
+}
+*/
+/*========Ends WORKAROUND FOR SCROLL JITTER ADDRESS BAR HIDE MOBILE DEVICE*/
+
+
+body{position:relative;letter-spacing:0.09em;font-family:Comfortaa;}
+.hr-center{width:50px;color:#dcdcdc;} /*hr-center to use for all center headings*/
+p{font-size: 15px;line-height: 1.7}
+#about,#projects,#contact {
+  padding:70px 10px;
+  -webkit-box-shadow: -1px 2px 25px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 2px 25px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 2px 25px -1px rgba(0,0,0,0.75);
+}
+
+/*NAVBAR*/
+
+/* Navbar transition for auto-hide navbar
+nav{transition: top 0.2s ease-in-out;}
+ .nav-up{top:-93px;} */
+
+.navbar{
+  background: rgba(64, 64, 64, 0.53);
+	filter:opacity(0.7);
+	-webkit-filter:opacity(0.7);
+	-moz-filter:opacity(0.7);
+      border-radius: 0;
+      margin-bottom: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-color: transparent;
+    }
+.navbar-brand .brand-font{font-weight: 600;font-family:Lovelo Line;font-size: 25px}
+.navbar-nav li a,.navbar-brand{color:white !important;font-weight: 600}
+.navbar-nav li a{
+	filter: blur(1.5px);
+	-webkit-filter: blur(1.5px);
+	-moz-filter: blur(1.5px);
+	transition: ease 0.5s;
+}
+.navbar-nav >.active>a{background-color:transparent!important;
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+}
+.navbar-nav li a:hover{background-color: #9e9e9e!important;
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+}
+.navbar-toggle{border: none}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{background-color:transparent;}
+
+/* Navbar-toggle cross animation */
+.navbar-toggle .icon-bar{
+    transition: 0.4s ease-in-out;
+}
+/* Rotate first bar */
+.change .bar1 {
+    
+    transform: rotate(-45deg) translate(-5px, 4px) ;
+}
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+/* Rotate last bar */
+.change .bar3 {
+   
+    transform: rotate(45deg) translate(-4px, -4px) ;
+}
+
+/*ENDS NAVBAR*/
+
+
+/* Importing Local Font */
+@font-face {
+    font-family: Lovelo Line;
+    src: local(Lovelo_Line), url('Lovelo_Line.otf') format('opentype');
+}
+@font-face {
+    font-family: FlexDisplay Thin;
+    src: local(FlexDisplay-Thin), url('FlexDisplay-Thin.otf') format('opentype');
+}
+
+/*HOME*/
+#home{background:url('../../images/header-background.jpg');
+background-position: center right;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-attachment: fixed;
+-moz-background-attachment: fixed;
+-o-background-attachment: fixed;
+color:white;height:100vh;
+background-color: rgb(74,67,70)}
+
+/* Home section For mobile devices */
+@media only screen and (max-width: 646px){
+	#home{height:550px;
+		background-attachment: scroll;
+-webkit-background-attachment: scroll;
+-moz-background-attachment: scroll;
+-o-background-attachment: scroll;}
+}
+
+/* Change background-attachment property,added hover active state of nav in internet explorer */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active), {
+    #home {
+        background-attachment: scroll;
+    }
+    #home h1,.navbar-brand .brand-font{font-family:Lovelo Line Light!important;}
+    .navbar-nav li a:hover{background-color: #9e9e9e!important;}
+		.navbar-nav >.active>a{background-color: #878787!important;}
+		}
+
+/* Change background-attachment property,added hover active state of navbar ,removed box shadow of project images in MS Edge browser */
+@supports (-ms-ime-align:auto) {
+    #home {
+        background-attachment: scroll;
+    }
+    .navbar-nav li a {
+	filter: blur(0px);
+}
+	.navbar-nav li a:hover{background-color: #9e9e9e!important;}
+	.navbar-nav >.active>a{background-color: #878787!important;}
+
+	.pic img{
+ box-shadow:  none!important;
+}
+}
+
+#home .container{position: relative;top:50%;transform:translateY(-50%);}
+#home h1{font-size: 100px;font-weight: 600;font-family:Lovelo Line;}
+#home h2{font-weight: 600;font-family: Comfortaa;}
+/*To avoid jitter motion due to auto-hide address bar in mobile browser*/
+#home{transition: height 0.5s ease-in-out}
+
+/*Responsive h1,h2 font-sizes on mobile devices width less than 646px*/
+@media only screen and (max-width: 646px){
+#home h1{font-size: 14vw;}
+#home h2{font-size: 4vw;}
+}
+/* Ends HOME */
+
+
+/*About me*/
+#about{background-color: #f4f3f3}
+#about p,#about h4{color:#9d9d9d;}
+#about ul li{padding-bottom: 5px;list-style:none;color:#9d9d9d;font-size: 15px;line-height: 1.7;}
+#about ul{padding-left: 0;}
+#about h4:after{content: '';
+		width:50px;
+		height: 1px;
+		background-color:#dcdcdc;
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+}
+#about .about-col-spacing{padding-top: 30px}
+@media only screen and (min-width:1200px){
+.about-row-spacing .col-lg-3{
+    padding-right: 0px;
+    padding-left: 100px;
+ }
+ .about-row-spacing .col-lg-4{
+    
+    width: 330px;
+    padding-right: 0px;
+    padding-left: 100px;
+ }
+}
+/* Ends ABOUT ME*/
+
+/*PROJECT*/
+@media only screen and (min-width:992px){
+.portfolio-col-one{padding-right: 40px;}
+.portfolio-col-two{padding-left: 40px}
+}
+
+.portfolio-col-one,.portfolio-col-two{margin-top: 80px;}
+
+#projects{background: -webkit-linear-gradient(left,#3a7bd5,#00d2ff);
+    background: linear-gradient(to right,#3a7bd5,#00d2ff);}
+#projects h3,#projects h4,#projects p{color:white;}
+#projects h4{font-size: 20px;}
+#projects{background-color:#3498db}
+
+.pic img{
+ box-shadow:  4px 8px 43px -1px rgba(0,0,0,0.75);	/*4px 8px 43px -1px rgba(0,0,0,0.75)*/
+-webkit-box-shadow:  4px 8px 43px -1px rgba(0,0,0,0.75);/*4px 8px 43px -1px rgba(0,0,0,0.75)*/
+-moz-box-shadow: 4px 8px 43px -1px rgba(0,0,0,0.75);/*4px 8px 43px -1px rgba(0,0,0,0.75)*/
+}
+
+@media only screen and (min-width:768px){
+.pic img{
+filter:grayscale(1) blur(2px);
+-webkit-filter:grayscale(1) blur(2px);
+-moz-filter:grayscale(1) blur(2px);
+transition: all 0.4s ease;
+}
+.pic img:hover{
+filter:grayscale(0) blur(0px);
+-webkit-filter:grayscale(0) blur(0px);
+-moz-filter:grayscale(0) blur(0px);
+
+}
+}
+/*Ends PROJECT*/
+
+
+
+/*CONTACT*/
+#contact{padding-bottom: 20px;background-image: url(../../images/bat.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    }
+#contact #social {text-align:center;padding-top: 50px;padding-bottom: 50px;}
+#contact #social i{color:white;padding-left:15px;padding-right: 15px;height:10;transition: all 0.4s ease;}
+#contact #social .fa-envelope:hover{color:#f39c12;}
+#contact #social .fa-github:hover{color:purple;}
+#contact #social a{text-decoration:none;cursor:pointer;}
+
+/* Ends CONTACT */
+

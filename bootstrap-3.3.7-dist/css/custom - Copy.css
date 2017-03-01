@@ -1,0 +1,56 @@
+body{position:relative;letter-spacing:0.09em;font-family: lato;}
+.hr-center{width:50px;color:#dcdcdc;}
+/*Providing all <h4> tag a underline*/
+
+hf3{padding-top: 30px;}
+h4{font-size: 20px;paddingd-top: 20px;}
+p,#about ul li{color:#8c8c8c;font-size: 16px;line-height: 1.7em;letter-spacing: 0.09em;}
+#about,#projects,#contact {padding:70px 10px;}
+.navbar{}
+
+/*HOME*/
+#home{background-color: blue;color:white;height:100vh;}
+#home .container{position: relative;top:50%;transform: translateY(-50%);}
+#home h1{font-size: 72px;font-weight: 600;font-family: alegreya}
+#home h2{font-weight: 300;font-family: montserrat;}
+
+/*--------*/
+
+/*About me*/
+#about ul li{padding-bottom: 5px;list-style: none;}
+#about ul{padding-left: 0;}
+#about h4:after{content: '';
+		width:50px;
+		height: 1px;
+		background-color:#dcdcdc;
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+}
+
+/*Project*/
+.portfolio-padding-top{padding-top:30px; }
+@media only screen and (min-width:992px){
+.portfolio-col-one{padding-right: 50px;}
+.portfolio-col-two{padding-left: 100px}
+}
+@media only screen and (max-width:1200pdx){
+.portfolio-col-one{padding-right: 50px;}
+.portfolio-col-two{padding-left: 100px}
+}
+/*--------*/
+
+
+/*Center Nav-Pills
+.nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+  /*   zoom:1; /* hasLayout ie7 trigger */
+} /*
+.nav-pills {text-align:center;}
+.tab-content div {text-align:justify;}
+
+.tab-content{padding:10px 50px;}
+.tab-content p{font-weight: 400}
+*/
