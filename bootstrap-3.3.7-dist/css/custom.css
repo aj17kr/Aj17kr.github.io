@@ -142,7 +142,7 @@ background-color: rgb(74,67,70)}
 	.navbar-nav li a:hover{background-color: #9e9e9e!important;}
 	.navbar-nav >.active>a{background-color: #878787!important;}
 
-	.pic img{
+	.portfolio-pic img{
  box-shadow:  none!important;
 }
 }
@@ -203,26 +203,28 @@ background-color: rgb(74,67,70)}
 #projects h4{font-size: 20px;}
 #projects{background-color:#3498db}
 
-.pic img{
+.portfolio-pic img{
  box-shadow:  4px 8px 43px -1px rgba(0,0,0,0.75);	/*4px 8px 43px -1px rgba(0,0,0,0.75)*/
 -webkit-box-shadow:  4px 8px 43px -1px rgba(0,0,0,0.75);/*4px 8px 43px -1px rgba(0,0,0,0.75)*/
 -moz-box-shadow: 4px 8px 43px -1px rgba(0,0,0,0.75);/*4px 8px 43px -1px rgba(0,0,0,0.75)*/
 }
 
-@media only screen and (min-width:768px){
-.pic img{
+#projects .portfolio-desc{padding-top: 20px}
+
+/*@media only screen and (min-width:768px){
+.portfolio-pic img{
 filter:grayscale(1) blur(2px);
 -webkit-filter:grayscale(1) blur(2px);
 -moz-filter:grayscale(1) blur(2px);
 transition: all 0.4s ease;
 }
-.pic img:hover{
+.portfolio-pic img:hover{
 filter:grayscale(0) blur(0px);
 -webkit-filter:grayscale(0) blur(0px);
 -moz-filter:grayscale(0) blur(0px);
 
 }
-}
+}*/
 /*Ends PROJECT*/
 
 
